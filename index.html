@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M9 Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Cafe Logo">
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to M9 Cafe</h1>
+            <div class="typing-text" id="typing">Your cozy corner for delicious food and happy vibes.</div>
+            
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-gallery">
+            <div class="menu-item">
+                <a href="snacks.html">
+                <img src="snack section.avif" alt="Pizza">
+            </a>
+                <p>Trackside Bites<br>
+                <h4>The snack section</h4></p>
+            </div>
+            <div class="menu-item">
+                <a href="pastry parlour.html">
+                <img src="bakery.png" alt="Bakery">
+                </a>
+                <p>Artisan Crumbs</p>
+                <h4>The Pastry Parlour</h4>
+              
+            </div>
+            <div class="menu-item">
+                <a href="drinks.html">
+
+                <img src="coffee parlour.jpg" alt="Coffee">
+                </a>
+                <p>Sip & Savor</p>
+                <h4>The Caffeine Corner</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="activities-section">
+        <h2>Other Activities</h2>
+        <p>We host live music nights, book clubs, and art exhibitions!</p>
+    <div class="activity-gallery">
+       <div class="activity-item">
+         <img src="pottery.jpg" alt="pottery">
+        <p>Pottery</p>
+       </div>
+       
+       <div class="activity-item">
+         <img src="photo.jpeg" alt="enjoy">
+        <p>Music Nights</p>
+       </div>
+       <div class="activity-item">
+        <img src="final book.jpg" alt="books">
+        <p>Book Clubs</p>
+       </div>
+       <div class="activity-item" >
+        <img src="games.jpeg" alt="games">
+        <p>Other games</p>
+       </div>
+    </div>
+       
+           
+    </section>
+
+    
+     <!-- Buttons -->
+  <button class="book-btn" onclick="document.getElementById('tableForm').style.display='block'">Book a Table</button>
+  <button class="book-btn" onclick="document.getElementById('partyForm').style.display='block'">Book My Cafe</button>
+
+  <!-- Table Booking Form -->
+  <div id="tableForm" class="form-popup">
+    <form class="form-container">
+      <h2>Book a Table</h2>
+      <label for="name">Name</label>
+      <input type="text" placeholder="Your Name" name="name" required>
+
+      <label for="date">Date</label>
+      <input type="date" name="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" name="time" required>
+
+      <label for="people">No. of People</label>
+      <input type="number" name="people" required>
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="document.getElementById('tableForm').style.display='none'">Close</button>
+    </form>
+  </div>
+
+  <!-- Party Booking Form -->
+  <div id="partyForm" class="form-popup">
+    <form class="form-container">
+      <h2>Book for Party / Birthday / Kitty</h2>
+      <label for="name">Name</label>
+      <input type="text" placeholder="Your Name" name="name" required>
+
+      <label for="event">Event Type</label>
+      <select name="event" required>
+        <option value="birthday">Birthday</option>
+        <option value="party">Party</option>
+        <option value="kitty">Kitty Party</option>
+      </select>
+
+      <label for="date">Date</label>
+      <input type="date" name="date" required>
+
+      <label for="guests">No. of Guests</label>
+      <input type="number" name="guests" required>
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="document.getElementById('partyForm').style.display='none'">Close</button>
+    </form>
+  </div>
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Address: 579 B- Block<br> World Street, Faridabad </p>
+    <p>Phone: +91 9818694607</p>
+    <p>Email: M9Cafe2025@gmail.com</p>
+</section>
+
+    <footer>
+        <p>&copy; 2025 M9 Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
